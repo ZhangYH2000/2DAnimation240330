@@ -1,0 +1,119 @@
+title $动画编辑器$ $Animation Editor$
+frm_tm $[ZhangYH] 帧时间: $ $[ZhangYH] Frame Time: $
+bt_save $保存$ $Save$
+bt_load $载入$ $Load$
+fpn_global $全局$ $Global$
+compile $解释并运行$ $Interpret & Run$
+fpn_cmd $指令$ $Command$
+unnamed_par $未命名$ $Unnamed$
+bt_del_par $删除$ $Del.$
+bt_add_par $新建参数$ $Create Param.$
+fpn_par $参数$ $Parameters$
+fpn_lang $语言/Lang.$ $Language$
+fpn_about $关于$ $About$
+
+dbx_r_border $红色: $ $R: $
+dbx_g_border $绿色: $ $G: $
+dbx_b_border $蓝色: $ $B: $
+dbx_r_inner $红色: $ $R: $
+dbx_g_inner $绿色: $ $G: $
+dbx_b_inner $蓝色: $ $B: $
+dbx_thick $粗细: $ $Thk.: $
+cb_single_px $单像素绘制: $ $Single Pixel: $
+cb_draw_border $绘制边界: $ $Draw Border: $
+cb_draw_inner $绘制内部: $ $Draw Inner: $
+
+fpn_canvas $工具箱$ $Tool Box$
+fpn_object $物体$ $Object$
+
+bt_nm_anim $打开$ $Open$
+no_anim $无文件.$ $No File.$
+loaded_anim $已加载: $ $Loaded: $
+cb_show_ob $显示物体: $ $Show Obj.: $
+
+cb_valid_curve $开启: $ $Enabled: $
+bt_load_curve $载入$ $Load$
+bt_save_curve $保存$ $Save$
+bt_edit_curve $编辑$ $Edit$
+bt_del_curve $删除$ $Del.$
+tb_nm_curve $名称: $ $Name: $
+fpn_curve $路径$ $Path$
+curves_saved $已保存曲线: $ $Curves Saved: $
+
+cb_curve_ob $使用路径: $ $Use Path: $
+tb_curve_ob $路径名称: $ $Path Name: $
+dbx_t_curve_ob $时刻: $ $Time: $
+dbx_h_text $字高: $ $Size: $
+tb_speed_ob $速度: $ $Speed: $
+
+dbx_left $左边: $ $LFT: $
+dbx_right $右边: $ $RGT: $
+dbx_top $顶部: $ $TOP: $
+dbx_bottom $底部: $ $BTM: $
+
+fpn_ob_list $对象列表$ $Obj. List$
+fpn_layer $图层$ $Layer$
+
+fpn_objects $物体组$ $Objects$
+bt_del_ob $删除$ $Del.$
+bt_ob_up $上移$ $Up$
+bt_ob_down $下移$ $Down$
+cb_ob_show $显示: $ $Show: $
+cb_ob_sel $选择: $ $Sel.: $
+
+fpn_layers $物体组$ $Objects$
+bt_del_ly $删除$ $Del.$
+bt_ly_up $上移$ $Up$
+bt_ly_down $下移$ $Down$
+cb_ly_show $显示: $ $Show: $
+cb_ly_sel $选择: $ $Sel.: $
+
+bt_add_ly $创建图层$ $Create Layer$
+tb_ly_col $颜色: $ $Col.: $
+
+bt_main_menu $回到主菜单$ $Main Menu$
+bt_canvas $工具箱$ $Tool Box$
+bt_cvs_brush $刷子$ $Brush$
+bt_cvs_bezier $曲线$ $Curve$
+bt_cvs_anim $动画$ $Anim.$
+bt_cvs_text $文本$ $Text$
+bt_cvs_ellipse $椭圆$ $Ellipse$
+bt_cvs_eraser $橡皮$ $Eraser$
+bt_cvs_fill $填充$ $Fill$
+
+unnamed $未命名$ $Unnamed$
+cb_closed_curve $闭合曲线: $ $Closed Curve: $
+cb_show_before $显示之前帧: $ $Show Prev. Frames: $
+cb_show_after $显示之后帧: $ $Show Foll. Frames: $
+cb_edit_all $显示所有控制点: $ $Show All Ctrl. Pnts.: $
+
+tb_frame_rate $帧率: $ $Frame Rate: $
+bt_double_frames $插帧$ $Frm. Interp.$
+bt_half_frames $抽帧$ $Frm. Extract.$
+
+bt_reset $重置$ $Reset$
+bt_cancel_ob $取消选定$ $Cancel Sel.$
+
+start $播放$ $Play$
+pause $暂停$ $Pause$
+lb_mouse $鼠标: $ $Mouse: $
+lb_time $时刻: $ $Time: $
+cb_follow_play $跟随播放头: $ $Follow Playhead: $
+mute $静音$ $Mute$
+unmute $解除静音$ $Unmute$
+
+about_txt
+$这是一个简单的动画编辑程序. 可以用它制作短时长的点阵图或者矢量图动画. 它支持贝塞尔曲线和椭圆两种矢量图形, 可以在相邻关键帧之间对矢量图形的参数进行补帧. 它也支持多图层. 
+
+下面是鼠标和键盘操作的说明. 在右侧的时间轴区域: 按住 [鼠标中键] 可以拖拽时间轴; 用 [鼠标左键] 可以选择特定的帧; 用 [F] 在当前位置创建新的关键帧; 用 [Delete] 删除选定的帧; 用 [Ctrl+C] 复制选定的帧; 用 [Ctrl+V] 粘贴选定的帧; 用 [S] 设置当前帧为终止时刻; 用 [I] 在当前帧之前插入新的帧; 用 [R] 删除当前帧并且使得之后帧前移一位. 此外, 用 [空格键] 可以开始或暂停动画的播放; 在创建 Bezier 曲线时, 用 [N] 来创建新的曲线段, 用 [Enter] 完成曲线的绘制, 用 [Esc] 取消曲线的绘制.
+
+这个程序支持三种文件格式. ".anim" 是原始的生成视频文件格式, 会占用非常大的空间; ".anm" 是压缩后的视频格式; ".anim_proj" 是动画的工程文件. 用户可以通过 "全局" 面板载入和保存外部文件, 程序将会识别文件名的后缀来判断相应文件的格式.
+
+这个程序缺少教程, 你可以参考程序文件夹内的示例存档, "示例存档说明.txt" 中有对这些存档的解释; 你也可以参考 itch.io 相应页面的演示视频链接. 我写这个程序只是出于学习目的, 感兴趣的话非常欢迎在我的 itch.io 页面留下评论. 祝生活愉快! (2024/5/19)$
+$(Translated by ChatGPT) This is a simple animation editing program. It can be used to create short bitmap or vector animations. It supports two types of vector graphics: Bezier curves and ellipses. The program can interpolate vector graphics parameters between adjacent keyframes. It also supports multiple layers.
+
+Below are the instructions for mouse and keyboard operations. In the timeline area on the right side: hold [middle mouse button] to drag the timeline; use [left mouse button] to select a specific frame; press [F] to create a new keyframe at the current position; press [Delete] to delete the selected frame; use [Ctrl+C] to copy the selected frame; use [Ctrl+V] to paste the copied frame; press [S] to set the current frame as the endpoint; press [I] to insert a new frame before the current one; press [R] to delete the current frame and shift subsequent frames forward by one. Additionally, press [spacebar] to start or pause the animation playback; when creating Bezier curves, press [N] to create a new curve segment, press [Enter] to finish drawing the curve, and press [Esc] to cancel the curve drawing.
+
+The program supports three file formats. ".anim" is the original generated video file format, which takes up a lot of space; ".anm" is the compressed video format; ".anim_proj" is the project file for the animation. Users can load and save external files through the "Global" panel, and the program will recognize the file format based on the file extension.
+
+This program lacks a tutorial, but you can refer to the example archives in the program folder, and "Example Archives Description.txt" contains explanations for these archives. You can also check out the demonstration video links on the corresponding itch.io page. I wrote this program purely for learning purposes, and if you're interested, feel free to leave a comment on my itch.io page. Have a great day! (2024/5/19)$
